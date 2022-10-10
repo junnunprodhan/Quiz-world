@@ -3,7 +3,7 @@ import logo from '../../asset/logo.png'
 const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (   
-<div className="bg-gray-600">
+<div className="bg-purple-700 mb-10">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <a
@@ -71,7 +71,7 @@ const Nav = () => {
               className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
               onClick={() => setIsMenuOpen(true)}
             >
-              <svg className="w-5 text-blue-600" viewBox="0 0 24 24">
+              <svg className="w-5 text-white" viewBox="0 0 24 24">
                 <path
                   fill="currentColor"
                   d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
