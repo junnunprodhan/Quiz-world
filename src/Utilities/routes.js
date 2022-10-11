@@ -5,6 +5,7 @@ import Root from '../components/Root/Root'
 import Topics from '../components/Topics/Topics'
 import Statistics from '../components/Statistics/Statistics'
 import Blog from '../components/Blog/Blog'
+import Topic from '../components/Topic/Topic'
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       { path: '/', element: <Home/> },
       { path: '/home', element: <Home /> },
       { path: '/topics', element: <Topics /> },
+      { path: '/topic:topicId',
+      loader:async({params})=>{
+        return fetch(` https://openapi.programming-hero.com/api/quiz/${params.topicId}`)},
+      element: <Topic /> },
       { path: '/statistics', element: <Statistics /> },
       { path: '/blog', element: <Blog/> },
     ],
