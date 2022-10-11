@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../asset/logo.png'
 const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -6,8 +7,8 @@ const Nav = () => {
 <div className="bg-purple-700 mb-10">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
-          <a
-            href="/"
+          <Link
+            to="/"
             aria-label="Company"
             title="Company"
             className="inline-flex items-center"
@@ -17,48 +18,48 @@ const Nav = () => {
             <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
               Quiz World
             </span>
-          </a>
+          </Link>
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>
-              <a
-                href="/home"
+              <Link
+                to="/home"
                 aria-label="Our product"
                 title="Our product"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/topics"
+              <Link
+                to="/topics"
                 aria-label="Our product"
                 title="Our product"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Topics
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/statistics"
+              <Link
+                to="/statistics"
                 aria-label="Our product"
                 title="Our product"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Statistics
-              </a>
+              </Link>
             </li>
          
             <li>
-              <a
-                href="/blog"
+              <Link
+                to="/blog"
                 aria-label="About us"
                 title="About us"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Blog
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="flex items-center hidden space-x-8 lg:flex">
@@ -91,8 +92,8 @@ const Nav = () => {
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <a
-                        href="/"
+                      <Link
+                        to="/"
                         aria-label="Company"
                         title="Company"
                         className="inline-flex items-center"
@@ -101,7 +102,7 @@ const Nav = () => {
                         <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                           Quiz World
                         </span>
-                      </a>
+                      </Link>
                     </div>
                     <div>
                       <button
@@ -122,44 +123,44 @@ const Nav = () => {
                   <nav>
                     <ul className="space-y-4">
                       <li>
-                        <a
-                          href="/home"
+                        <Link
+                          to="/home"
                           aria-label="Our product"
                           title="Our product"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Home
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/topics"
+                        <Link
+                          to="/topics"
                           aria-label="Our product"
                           title="Our product"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Topics
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/statistics"
+                        <Link
+                          to="/statistics"
                           aria-label="Product pricing"
                           title="Product pricing"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Statistics
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/blog"
+                        <Link
+                          to="/blog"
                           aria-label="About us"
                           title="About us"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Blog
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </nav>

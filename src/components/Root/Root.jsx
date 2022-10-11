@@ -1,23 +1,19 @@
-import React, { createContext, useState } from 'react'
-
+import React, { createContext, } from 'react'
 import { Outlet, useLoaderData } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 import Nav from '../Nav/Nav'
 
-export const ProductContext = createContext([])
-export const CartContext = createContext([])
+export const TopicsContext = createContext([])
 const Root = () => {
-
-
+  const TopicsData=useLoaderData()
+  const Topics=TopicsData.data;
 
   return (
-    <ProductContext.Provider >
-      <CartContext.Provider value={[]}>
+    <TopicsContext.Provider value={Topics} >
         <Nav />
         <Outlet />
         <Footer />
-      </CartContext.Provider>
-    </ProductContext.Provider>
+    </TopicsContext.Provider>
   )
 }
 

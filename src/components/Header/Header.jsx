@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../asset/logo.png'
 
 const Header = () => {
@@ -48,12 +49,12 @@ const Header = () => {
               </p>
             </div>
             <div>
-              <a
-                href="/topics"
+              <Link
+                to="/topics"
                 className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-white bg-purple-600 transition duration-200 rounded shadow-md hover:text-deep-purple-900 bg-teal-accent-400 hover:bg-deep-purple-accent-100 focus:shadow-outline focus:outline-none"
               >
                 Get started
-              </a>
+              </Link>
             </div>
           </div>
         </div>
