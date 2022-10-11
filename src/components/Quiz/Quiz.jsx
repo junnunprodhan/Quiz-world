@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Quiz = ({topic,handleTopic}) => {
+const Quiz = ({topic}) => {
     const {name,logo,total,id}=topic
   return (
     <div className="max-w-xs rounded-md shadow-md bg-purple-700 dark:text-gray-100">
@@ -23,20 +23,13 @@ const Quiz = ({topic,handleTopic}) => {
         to={`/topic${id}`}
         >
         <button
-        onClick={()=>handleTopic}
           type="button"
           className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-purple-600 text-white"
         >
           Start Quiz
         </button>
         </Link>
-        {/* <button
-        onClick={()=>handleTopic}
-          type="button"
-          className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-purple-600 text-white"
-        >
-          Start Quiz
-        </button> */}
+       
       </div>
     </div>
   );
